@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
+    <title>DETRAN</title>
+    <link rel="stylesheet" href="style/style-exjs-01.css">
+  <style>
+    input#txtvel { 
+    font-size: 0.95em;
+    width: 3em;}
+  </style>
+</head>
+<body>
+
+
+    <h6><mark>&emsp;<ins><a href="../../../central/js-modulos.html">voltar</a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
+
+    <h1 style="color: whitesmoke; text-shadow: 0.01em 0.01em 0.05em whitesmoke;">Sistema de Multas.</h1>
+
+
+  <main>
+    <p>Velocidade do carro:<br>
+    <input type="number" name="txtvel" id="txtvel">&ensp;Km/h<br>
+    <input type="button" value="Verificar" onclick="calcular()"></p>
+    <main id="res"></main>
+  </main>
+
+
+  <script>
+    function calcular() {
+        txtv = document.querySelector("input#txtvel")  // id = # // name = . //
+        res = document.querySelector("main#res")
+        vel = parseInt(txtv.value)
+        res.innerHTML = `<p>A sua velocidade é <strong>${vel}</strong>Km/h!</p>`
+        if (vel > 80) {
+        res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de viadagem</p>`
+        }
+        res.innerHTML += `<p>Dirija sempre com sinto de segurança!</p>`}
+
+
+  </script>
+
+
+</body>
+</html>

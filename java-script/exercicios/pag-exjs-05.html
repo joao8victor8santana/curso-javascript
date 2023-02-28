@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
+    <title>Primeiros passos com DOM</title>
+    <link rel="stylesheet" href="style/style-exjs-01.css">
+</head>
+<body>
+
+
+    <h6><mark>&emsp;<ins><a href="../../../central/js-modulos.html">voltar</a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
+
+
+    <h1 style="color: whitesmoke; text-shadow: 0.01em 0.01em 0.05em whitesmoke;">&ensp;Iniciando estudos DOM</h1>
+
+
+  <main>
+    <p style="text-align: center;">&emsp; 🛠️ O EXERCÍCIO 05 TÁ COM PROBLEMA 🛠️</p>
+    <p>Aqui vai o resultado:</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> com em JavaScript.</p>
+    <div>Clique em mim</div>
+    <p id="tx1"></p>
+  </main>
+
+
+  <script>
+//    n = prompt("Qual é o seu nome?")
+    p1 = document.getElementsByTagName("p")[2]
+    tx1 = document.querySelector("p#tx1")
+    tx1.innerHTML = `<p>p1.innerText: ${p1.innerHTML}</p>`
+    document.write(`p1.innerHTML: ${p1.innerHTML}`)
+  </script>
+
+
+</body>
+</html>

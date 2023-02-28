@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
+    <title>Fazendo Desafios</title>
+    <link rel="stylesheet" href="style/style-dejs-01.css">
+  <style>
+    input {
+      background-color: gray;
+      margin-bottom: 2.5em;
+      text-align: center;
+      margin-top: 2.5em;
+      font-size: 2.5em;
+      height: 2.5em;
+      width: 10em;}
+    p#bo {
+      text-align: center;
+      }
+  </style>
+</head>
+<body>
+
+
+    <h6 style="text-align: left;"><mark>&emsp;<ins><a href="../../../central/pag-central.html" ><mark><ins>voltar</ins></mark></a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
+    <h5>&emsp;&emsp;&emsp;C u r s o&emsp;&emsp;d e&emsp;&emsp;J a v a&emsp;S c r i p t&emsp;/&emsp;d e 0 4 .</h5>
+    <h1>&emsp;&emsp;&emsp;<mark>&emsp;<ins>Calculando o Troco.&emsp;</ins></mark><ins>&emsp;</ins></h1>
+    
+
+  <main>
+    <p id="bo">  <input id="start" type="button" value="Comprar Produto"></p>
+  </main>
+
+
+  <script>
+    s = document.querySelector("input#start")
+    s.addEventListener("click", clicar)
+    s.addEventListener("mouseenter", entrar)
+    s.addEventListener("mouseout", sair)
+
+
+    function clicar() {
+        pro = prompt("Que produto você está comprando?")
+        val = prompt(`Quanto custa o produto:\n${pro} que você está comprando?`)
+        din = prompt(`Qual foi o valor entregue para pagar o produto:\n${pro}?`)
+        val = Number(val)
+        din = Number(din)
+        tro = din - val
+        val = val.toLocaleString("pt-br", {style: "currency", currency: "BRL"})
+        din = din.toLocaleString("pt-br", {style: "currency", currency: "BRL"})
+        tro = tro.toLocaleString("pt-br", {style: "currency", currency: "BRL"})
+        alert(`O produto comprado:\n  ${pro} que custou ${val} Na PerihLoja.\n  Foi pago com ${din} em dinheiro.\n  E o seu troco é de ${tro}\n  Volte sempre!`)
+    }
+    function entrar() {
+        s.style.background = "rgb(48, 48, 48)"}
+    function sair() {
+        s.style.background = "gray"}
+  </script>
+
+
+<h6><!-- Navegar pelas Páginas. -->
+  <a href="pag-dejs-01.html"      ><code><mark>01</mark></code></a>
+  &nbsp;<a href="pag-dejs-02.html"><code><mark>02</mark></code></a>
+  &nbsp;<a href="pag-dejs-03.html"><code><mark>03</mark></code></a>
+  &nbsp;<mark>&nbsp;X&nbsp;</mark>        <!-- Onde você está. -->
+  &nbsp;<a href="pag-dejs-05.html"><code><mark>05</mark></code></a>
+  &nbsp;<a href="pag-dejs-06.html"><code><mark>06</mark></code></a>
+  &nbsp;<a href="pag-dejs-07.html"><code><mark>07</mark></code></a>
+  &nbsp;<a href="pag-dejs-08.html"><code><mark>08</mark></code></a>
+  &nbsp;<a href="pag-dejs-09.html"><code><mark>09</mark></code></a>
+  &nbsp;<a href="pag-dejs-10.html"><code><mark>10</mark></code></a>
+  &nbsp;<mark>&nbsp;...&nbsp;</mark><br>
+
+              <a href="pag-dejs-01.html"                       ><mark>&nbsp;<code>&lt;&lt;&lt;</code>&nbsp;</mark></a><!-- <<< -->
+  &ensp;&emsp;<a href="pag-dejs-03.html" rel="prev"            ><mark>&nbsp;<code>&lt;&lt;</code>&nbsp;</mark></a><!-- << -->
+    &emsp;<abbr title="  Você está visualizando a página 04  "><mark>&nbsp;   <code>Pág</code>&nbsp;&nbsp;&nbsp;<code>04</code>   &nbsp;</mark></abbr><!-- Onde você está. -->
+        &emsp;<a href="pag-dejs-05.html" rel="next"            ><mark>&nbsp;<code>&gt;&gt;</code>&nbsp;</mark></a><!-- >> -->
+  &ensp;&emsp;<a href="pag-dejs-12.html"                       ><mark>&nbsp;<code>&gt;&gt;&gt;</code>&nbsp;</mark></a><!-- >>> -->
+</h6>
+</body>
+</html>

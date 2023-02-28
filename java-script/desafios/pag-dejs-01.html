@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
+    <title>Fazendo Desafios</title>
+    <link rel="stylesheet" href="style/style-dejs.css">
+  <style>
+    input#op1, input#op2, input#op3 {
+      background-color: gray;
+      margin-bottom: 0.5em;
+      text-align: center;
+      margin-top: 0.5em;
+      font-size: 1.5em;
+      height: 2.5em;
+      width: 10em;}
+    p#bo {
+      text-align: center;
+      }
+  </style>
+</head>
+<body>
+
+  <header id="mensup">
+    <a href="../../../central/js-modulos.html">voltar</a>
+    <p>Desafio 01 do curso de javascript</p>
+  </header>
+
+
+  <main>
+    <h1 id="titu">Qual o seu tipo de waifu?</h1>
+  <article>
+    <p id="bo">  <input id="op1" type="button" value="Loli"> <input id="op2" type="button" value="Trap"> <input id="op3" type="button" value="Elf"></p>
+  </article>
+  </main>
+
+  <script>
+    op1 = document.querySelector("input#op1")
+    op1.addEventListener("click", clicar1)
+    op1.addEventListener("mouseenter", entrar1)
+    op1.addEventListener("mouseout", sair1)
+
+    op2 = document.querySelector("input#op2")
+    op2.addEventListener("click", clicar2)
+    op2.addEventListener("mouseenter", entrar2)
+    op2.addEventListener("mouseout", sair2)
+
+    op3 = document.querySelector("input#op3")
+    op3.addEventListener("click", clicar3)
+    op3.addEventListener("mouseenter", entrar3)
+    op3.addEventListener("mouseout", sair3)
+
+
+
+    function clicar1() {
+        alert("O FBI está de olho em você...")}
+    function entrar1() {
+        op1.style.background = "rgb(48, 48, 48)"}
+    function sair1() {
+        op1.style.background = "gray"}
+
+
+        function clicar2() {
+        alert("Que nem feijoada...")}
+    function entrar2() {
+        op2.style.background = "rgb(48, 48, 48)"}
+    function sair2() {
+        op2.style.background = "gray"}
+
+
+        function clicar3() {
+        alert("Yamate... Yamete kudasai...")}
+    function entrar3() {
+        op3.style.background = "rgb(48, 48, 48)"}
+    function sair3() {
+        op3.style.background = "gray"}
+  </script>
+
+
+<footer id="mensub"><!-- Navegar pelas Páginas. -->
+  <nav id="trocatroca">
+
+    <a href="#" id="opa1"    ><mark class="menneg">X</mark></a>
+    <a href="pag-dejs-02.html"><code><mark>02</mark></code></a>
+    <a href="pag-dejs-03.html"><code><mark>03</mark></code></a>
+    <a href="pag-dejs-04.html"><code><mark>04</mark></code></a>
+    <a href="pag-dejs-05.html"><code><mark>05</mark></code></a>
+    <a href="pag-dejs-06.html"><code><mark>06</mark></code></a>
+    <a href="pag-dejs-07.html"><code><mark>07</mark></code></a>
+    <a href="pag-dejs-08.html"><code><mark>08</mark></code></a>
+    <a href="pag-dejs-09.html"><code><mark>09</mark></code></a>
+    <a href="pag-dejs-10.html"><code><mark>10</mark></code></a>
+    <a href="#" id="opa2"    ><mark class="menneg">...</mark></a>
+  <br>
+    <a href="#"                                     ><mark class="menneg">&nbsp;<code>&lt;&lt;&lt;</code>&nbsp;</mark></a><!-- <<< -->
+    <a href="#" rel="prev"                          ><mark class="menneg">&nbsp;<code>&lt;&lt;</code>&nbsp;</mark></a><!-- << -->
+  <abbr title=" Você está visualizando a página 01 "><mark><code>&nbsp;Pág &nbsp;01&nbsp;</code></mark></abbr><!-- Onde você está. -->
+    <a href="pag-dejs-02.html" rel="next"            ><mark>&nbsp;<code>&gt;&gt;</code>&nbsp;</mark></a><!-- >> -->
+    <a href="pag-dejs-13.1.html"                     ><mark>&nbsp;<code>&gt;&gt;&gt;</code>&nbsp;</mark></a><!-- >>> -->
+
+  </nav>
+  </footer>
+
+</body>
+</html>

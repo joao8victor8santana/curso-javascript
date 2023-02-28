@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
+    <title>Somando Números</title>
+    <link rel="stylesheet" href="style/style-exjs-01.css">
+  <style>
+    input { 
+        font-size: 1em;
+        width: 4.5em;}
+  </style>
+</head>
+<body>
+
+
+    <h6><mark>&emsp;<ins><a href="../../../central/js-modulos.html">voltar</a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
+
+
+    <h1 style="color: whitesmoke; text-shadow: 0.01em 0.01em 0.05em whitesmoke;">&ensp;Somando valores</h1>
+
+  <main>
+    <input type="number" name="txtn1" id="txtn1">
+    +
+    <input type="number" name="txtn2" id="txtn2">
+    &ensp;
+    <input type="button" value="somar" onclick="somar()">
+    
+    <main id="res"></main>
+  </main>
+
+
+   <script>
+    function somar() {
+        tn1 = document.getElementById("txtn1")
+        tn2 = document.getElementById("txtn2")
+        res = document.getElementById("res")
+        n1 = parseInt(tn1.value)
+        n2 = parseInt(tn2.value)
+        s = n1 + n2
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`}
+
+
+   </script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
+    <title>Document</title>    
+    <link rel="stylesheet" href="style/style-exjs-01.css">
+</head>
+<body>
+  
+
+    <h6><mark>&emsp;<ins><a href="../../../central/js-modulos.html">voltar</a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
+
+
+  <main>
+    <p id="text"></p>
+  </main>
+
+
+  <script>
+    nome = prompt("Qual é o seu nome?")
+    text.innerHTML = `<p>Olá, ${nome}!</p>`
+    text.innerHTML += `<p>Seu nome possui ${nome.length} letras.</p>`
+    text.innerHTML += `<p>Seu nome em maiúsculas é assim: ${nome.toUpperCase()}</p>`
+    text.innerHTML += `<p>Seu nome em minúsculas é assim: ${nome.toLowerCase()}</p>`
+    /* Era pra ser assim:
+    nome = prompt("Qual é o seu nome?")
+    document.write(`Olá, ${nome}!`)
+    document.write(`Seu nome possui ${nome.length} letras.`)
+    document.write(`Seu nome em maiusculas é assim: ${nome.toUpperCase()}`)
+    */
+  </script>
+</body>
+</html>

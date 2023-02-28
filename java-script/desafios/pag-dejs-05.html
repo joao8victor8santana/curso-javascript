@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
+    <title>Fazendo Desafios</title>
+    <link rel="stylesheet" href="style/style-dejs-01.css">
+  <style>
+    input {
+      background-color: gray;
+      text-align: center;
+      margin-top: 1em;
+      font-size: 2.5em;
+      height: 2.5em;
+      width: 10em;}
+    p#bo {
+      text-align: center;
+      }
+  </style>
+</head>
+<body>
+
+
+    <h6 style="text-align: left;"><mark>&emsp;<ins><a href="../../../central/pag-central.html" ><mark><ins>voltar</ins></mark></a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
+    <h5>&emsp;&emsp;&emsp;C u r s o&emsp;&emsp;d e&emsp;&emsp;J a v a&emsp;S c r i p t&emsp;/&emsp;d e 0 5 .</h5>
+    <h1>&emsp;&emsp;&emsp;<mark>&emsp;<ins>Conversor de Medidas.&emsp;</ins></mark><ins>&emsp;</ins></h1>
+    
+
+  <main>
+    <p style="font-size: 1.5em; text-align: center;">🛠️ O EXERCÍCIO 05 TÁ COM PROBLEMA 🛠️</p>
+    <p id="bo">  <input id="con" type="button" value="Converter"></p>
+    <div id="res"><h2 style="text-align: center;">clique no botão acima para iniciar</h2></div>
+  </main>
+
+
+  <script>
+    c = document.querySelector("input#con")
+    c.addEventListener("click", clicar)
+    c.addEventListener("mouseenter", entrar)
+    c.addEventListener("mouseout", sair)
+
+
+    function clicar() {
+        dis = prompt("Digite uma distância em metros (m)")
+        dis = parseInt(dis)
+        km = (dis/1000).toFixed(3)
+        hm = (dis/100).toFixed(3)
+        dam = (dis/10).toFixed(3)
+        dm = (dis*10)
+        cm = (dis*100)
+        mm = (dis*1000)
+        res.innerHTML = `<h2> A distância de ${dis} metros, corresponde a...</h2>
+                          <p>${km} quilômetros (Km)</p>
+                          <p>${hm} hectômetros (Hm)</p>
+                          <p>${dam} decâmetros (Dam)</p>
+                          <p>${dm} decímetros (Dm)</p>
+                          <p>${cm} centímetros (Cm)</p>
+                          <p>${mm} milímetros (Mm)</p>`
+      }
+    function entrar() {
+        c.style.background = "rgb(48, 48, 48)"}
+    function sair() {
+        c.style.background = "gray"}
+  </script>
+
+
+<h6><!-- Navegar pelas Páginas. -->
+  <a href="pag-dejs-01.html"      ><code><mark>01</mark></code></a>
+  &nbsp;<a href="pag-dejs-02.html"><code><mark>02</mark></code></a>
+  &nbsp;<a href="pag-dejs-03.html"><code><mark>03</mark></code></a>
+  &nbsp;<a href="pag-dejs-04.html"><code><mark>04</mark></code></a>
+  &nbsp;<mark>&nbsp;X&nbsp;</mark>        <!-- Onde você está. -->
+  &nbsp;<a href="pag-dejs-06.html"><code><mark>06</mark></code></a>
+  &nbsp;<a href="pag-dejs-07.html"><code><mark>07</mark></code></a>
+  &nbsp;<a href="pag-dejs-08.html"><code><mark>08</mark></code></a>
+  &nbsp;<a href="pag-dejs-09.html"><code><mark>09</mark></code></a>
+  &nbsp;<a href="pag-dejs-10.html"><code><mark>10</mark></code></a>
+  &nbsp;<mark>&nbsp;...&nbsp;</mark><br>
+
+              <a href="pag-dejs-01.html"                       ><mark>&nbsp;<code>&lt;&lt;&lt;</code>&nbsp;</mark></a><!-- <<< -->
+  &ensp;&emsp;<a href="pag-dejs-04.html" rel="prev"            ><mark>&nbsp;<code>&lt;&lt;</code>&nbsp;</mark></a><!-- << -->
+    &emsp;<abbr title="  Você está visualizando a página 05  "><mark>&nbsp;   <code>Pág</code>&nbsp;&nbsp;&nbsp;<code>05</code>   &nbsp;</mark></abbr><!-- Onde você está. -->
+        &emsp;<a href="pag-dejs-06.html" rel="next"            ><mark>&nbsp;<code>&gt;&gt;</code>&nbsp;</mark></a><!-- >> -->
+  &ensp;&emsp;<a href="pag-dejs-12.html"                       ><mark>&nbsp;<code>&gt;&gt;&gt;</code>&nbsp;</mark></a><!-- >>> -->
+</h6>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="style/style-exjs-01.css">
+  <style>
+    div#area {
+        background-color: rgb(150, 150, 150);
+        border-radius: 0.4em;
+        line-height: 06em;
+        text-align: center;
+        height: 06.5em;
+        width: 07em;
+        color: rgb(0, 0, 0);}
+
+
+  </style>
+</head>
+<body>
+
+
+    <h6><mark>&emsp;<ins><a href="../../../central/js-modulos.html">voltar</a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
+
+
+    <h1 style="color: whitesmoke; text-shadow: 0.01em 0.01em 0.05em whitesmoke;">&ensp;Interações com a grande caixa maluca</h1>
+
+
+  <main>
+    <div id="area">Interaja...</div>
+    <p>&emsp;Caso o seu código pare de funcionar clique com o botão direito na pagina, clique em inspecionar e veja qual erro que aparece na parte de console.</p>
+
+
+  </main>
+
+
+  <script>
+    a = document.querySelector("div#area")
+    a.addEventListener("click", clicar)
+    a.addEventListener("mouseenter", entrar)
+    a.addEventListener("mouseout", sair)
+
+    function clicar() {
+        a.innerText = "Clicou!"
+        a.style.background = "rgb(77, 61, 93)"
+        a.style.color = "whitesmoke"}
+    function entrar() {
+        a.innerText = "Entrou!"
+        a.style.background = "rgb(48, 48, 48)"
+        a.style.color = "whitesmoke"}
+    function sair() {
+        a.innerText = "Saiu!"
+        a.style.background = "rgb(48, 48, 48)"
+        a.style.color = "whitesmoke"}
+
+
+  </script>
+
+
+</body>
+</html>
