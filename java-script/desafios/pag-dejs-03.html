@@ -6,31 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
     <title>Fazendo Desafios</title>
-    <link rel="stylesheet" href="style/style-dejs-01.css">
+    <link rel="stylesheet" href="style/style-dejs.css">
   <style>
-    input {
-      background-color: gray;
-      margin-bottom: 2.5em;
-      text-align: center;
-      margin-top: 2.5em;
-      font-size: 2.25em;
-      height: 2.5em;
-      width: 12em;}
-    p#bo {
-      text-align: center;
-      }
+  input {
+    background-color: gray;
+    margin-bottom: 2.5em;
+    text-align: center;
+    margin-top: 2.5em;
+    font-size: 2.25em;
+    height: 2.5em;
+    width: 12em;
+  }
+  p#bo { text-align: center; }
   </style>
 </head>
 <body>
 
+  <header id="mensup">
+    <a href="../../../central/js-modulos.html">voltar</a>
+    <p>Desafio 03 do curso de JavaScript</p>
+  </header>
 
-    <h6 style="text-align: left;"><mark>&emsp;<ins><a href="../../../central/pag-central.html" ><mark><ins>voltar</ins></mark></a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
-    <h5>&emsp;&emsp;&emsp;C u r s o&emsp;&emsp;d e&emsp;&emsp;J a v a&emsp;S c r i p t&emsp;/&emsp;d e 0 3 .</h5>
-    <h1>&emsp;&emsp;&emsp;<mark>&emsp;<ins>Antes e Depois.&emsp;</ins></mark><ins>&emsp;</ins></h1>
-    
 
   <main>
+    <h1 id="titu">Antes e Depois.</h1>
+  <article>
     <p id="bo">  <input id="start" type="button" value="Antecessor e Sucessor"></p>
+  </article>
   </main>
 
 
@@ -55,24 +57,29 @@
   </script>
 
 
-<h6><!-- Navegar pelas Páginas. -->
-  <a href="pag-dejs-01.html"      ><code><mark>01</mark></code></a>
-  &nbsp;<a href="pag-dejs-02.html"><code><mark>02</mark></code></a>
-  &nbsp;<mark>&nbsp;X&nbsp;</mark>        <!-- Onde você está. -->
-  &nbsp;<a href="pag-dejs-04.html"><code><mark>04</mark></code></a>
-  &nbsp;<a href="pag-dejs-05.html"><code><mark>05</mark></code></a>
-  &nbsp;<a href="pag-dejs-06.html"><code><mark>06</mark></code></a>
-  &nbsp;<a href="pag-dejs-07.html"><code><mark>07</mark></code></a>
-  &nbsp;<a href="pag-dejs-08.html"><code><mark>08</mark></code></a>
-  &nbsp;<a href="pag-dejs-09.html"><code><mark>09</mark></code></a>
-  &nbsp;<a href="pag-dejs-10.html"><code><mark>10</mark></code></a>
-  &nbsp;<mark>&nbsp;...&nbsp;</mark><br>
+  <footer id="mensub"><!-- Navegar pelas Páginas. -->
+  <nav id="trocatroca">
 
-              <a href="pag-dejs-01.html"                       ><mark>&nbsp;<code>&lt;&lt;&lt;</code>&nbsp;</mark></a><!-- <<< -->
-  &ensp;&emsp;<a href="pag-dejs-02.html" rel="prev"            ><mark>&nbsp;<code>&lt;&lt;</code>&nbsp;</mark></a><!-- << -->
-    &emsp;<abbr title="  Você está visualizando a página 03  "><mark>&nbsp;   <code>Pág</code>&nbsp;&nbsp;&nbsp;<code>03</code>   &nbsp;</mark></abbr><!-- Onde você está. -->
-        &emsp;<a href="pag-dejs-04.html" rel="next"            ><mark>&nbsp;<code>&gt;&gt;</code>&nbsp;</mark></a><!-- >> -->
-  &ensp;&emsp;<a href="pag-dejs-12.html"                       ><mark>&nbsp;<code>&gt;&gt;&gt;</code>&nbsp;</mark></a><!-- >>> -->
-</h6>
+    <a href="pag-dejs-01.html"><code><mark>01</mark></code></a>
+    <a href="pag-dejs-02.html"><code><mark>02</mark></code></a>
+    <a href="#" id="opa1"    ><mark class="menneg">X</mark></a>
+    <a href="pag-dejs-04.html"><code><mark>04</mark></code></a>
+    <a href="pag-dejs-05.html"><code><mark>05</mark></code></a>
+    <a href="pag-dejs-06.html"><code><mark>06</mark></code></a>
+    <a href="pag-dejs-07.html"><code><mark>07</mark></code></a>
+    <a href="pag-dejs-08.html"><code><mark>08</mark></code></a>
+    <a href="pag-dejs-09.html"><code><mark>09</mark></code></a>
+    <a href="pag-dejs-10.html"><code><mark>10</mark></code></a>
+    <a href="#" id="opa2"    ><mark class="menneg">...</mark></a>
+  <br>
+    <a href="pag-dejs-01.html"                      ><mark>&nbsp;<code>&lt;&lt;&lt;</code>&nbsp;</mark></a><!-- <<< -->
+    <a href="pag-dejs-02.html" rel="prev"           ><mark>&nbsp;<code>&lt;&lt;</code>&nbsp;</mark></a><!-- << -->
+  <abbr title=" Você está visualizando a página 03 "><mark><code>&nbsp;Pág &nbsp;03&nbsp;</code></mark></abbr><!-- Onde você está. -->
+    <a href="pag-dejs-04.html" rel="next"            ><mark>&nbsp;<code>&gt;&gt;</code>&nbsp;</mark></a><!-- >> -->
+    <a href="pag-dejs-13.1.html"                     ><mark>&nbsp;<code>&gt;&gt;&gt;</code>&nbsp;</mark></a><!-- >>> -->
+
+  </nav>
+  </footer>
+
 </body>
 </html>
