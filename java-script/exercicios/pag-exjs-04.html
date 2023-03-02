@@ -5,32 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
-    <title>Document</title>    
-    <link rel="stylesheet" href="style/style-exjs-01.css">
+    <title>Mundo Novo</title>    
+    <link rel="stylesheet" href="style/style-exjs.css">
 </head>
 <body>
-  
 
-    <h6><mark>&emsp;<ins><a href="../../../central/js-modulos.html">voltar</a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
+
+  <header id="mensup">
+    <a href="../../../central/js-modulos.html">voltar</a>
+    <p>Exercício 04 módulo B do curso de JavaScript</p>
+  </header>
+
+
 
 
   <main>
-    <p id="text"></p>
+    <h1 id="titu">Sem título</h1>
+  <article id="ex">
+
+  </article>
   </main>
 
 
+
+
   <script>
+
+    res = document.querySelector("article#ex")
+
     nome = prompt("Qual é o seu nome?")
-    text.innerHTML = `<p>Olá, ${nome}!</p>`
-    text.innerHTML += `<p>Seu nome possui ${nome.length} letras.</p>`
-    text.innerHTML += `<p>Seu nome em maiúsculas é assim: ${nome.toUpperCase()}</p>`
-    text.innerHTML += `<p>Seu nome em minúsculas é assim: ${nome.toLowerCase()}</p>`
-    /* Era pra ser assim:
-    nome = prompt("Qual é o seu nome?")
-    document.write(`Olá, ${nome}!`)
-    document.write(`Seu nome possui ${nome.length} letras.`)
-    document.write(`Seu nome em maiusculas é assim: ${nome.toUpperCase()}`)
-    */
+    res.innerHTML = `<p>Olá, <strong>${nome}</strong>!</p>`
+    res.innerHTML += `<p>Seu nome possui ${nome.length} letras.</p>`
+    res.innerHTML += `<p>Seu nome em maiúsculas é assim: ${nome.toUpperCase()}</p>`
+    res.innerHTML += `<p>E em minúsculas fica assim: ${nome.toLowerCase()}</p>`
+
   </script>
+
+
 </body>
 </html>
