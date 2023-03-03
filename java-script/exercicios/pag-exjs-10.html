@@ -6,39 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
     <title>DETRAN</title>
-    <link rel="stylesheet" href="style/style-exjs-01.css">
+    <link rel="stylesheet" href="style/style-exjs.css">
   <style>
-    input#txtvel { 
+  input { margin: 0.5em; }
+  input#txtvel {
+    margin-right: 0em;
     font-size: 0.95em;
-    width: 3em;}
+    width: 3em;
+  }
   </style>
 </head>
 <body>
 
 
-    <h6><mark>&emsp;<ins><a href="../../../central/js-modulos.html">voltar</a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
+  <header id="mensup">
+    <a href="../../../central/js-modulos.html">voltar</a>
+    <p>Exercício 06 do módulo C do curso de JavaScript</p>
+  </header>
 
-    <h1 style="color: whitesmoke; text-shadow: 0.01em 0.01em 0.05em whitesmoke;">Sistema de Multas.</h1>
+
 
 
   <main>
-    <p>Velocidade do carro:<br>
-    <input type="number" name="txtvel" id="txtvel">&ensp;Km/h<br>
+    <h1 id="titu">sistema de multas.</h1>
+  <article id="ex">
+    <p>Velocidade do carro:
+    <input type="number" name="txtvel" id="txtvel">&ensp;Km/h
     <input type="button" value="Verificar" onclick="calcular()"></p>
-    <main id="res"></main>
+    <p id="res"></p>
+  </article>
   </main>
 
 
+
+
   <script>
-    function calcular() {
-        txtv = document.querySelector("input#txtvel")  // id = # // name = . //
-        res = document.querySelector("main#res")
-        vel = parseInt(txtv.value)
-        res.innerHTML = `<p>A sua velocidade é <strong>${vel}</strong>Km/h!</p>`
-        if (vel > 80) {
-        res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de viadagem</p>`
-        }
-        res.innerHTML += `<p>Dirija sempre com sinto de segurança!</p>`}
+  function calcular() {
+    txtv = document.querySelector("input#txtvel")  // id = # // name = . //
+    res = document.querySelector("p#res")
+    vel = parseInt(txtv.value)
+    res.innerHTML = `<p>A sua velocidade é <strong>${vel}</strong>Km/h!</p>`
+    if (vel > 80) {
+    res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de viadagem</p>`
+    }
+    res.innerHTML += `<p>Dirija sempre com sinto de segurança!</p>`}
 
 
   </script>

@@ -5,44 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
-    <title>Exercício 09.1</title>
-    <link rel="stylesheet" href="style/style-exjs-01.css">
+    <title>Exercício 09.2</title>
+    <link rel="stylesheet" href="style/style-exjs.css">
   <style>
-    input {
-        background-color: #e0e0e0;
-        border-radius: 0.5em;}
-    main#paises {
-      background-color: rgb(152, 131, 171);}
+  article#ex > p { margin-left: 1em;}
+  input {
+    transition-duration: 0.1s;
+    padding: 0em 0.5em;
+    font-size: 1em;
+    background-color: #e0e0e0;
+    border-radius: 0.5em;
+    line-height: 1.5em;
+  }
+  input:hover { background-color: var(--cor5); }
+  div#paises {
+    border-radius: 1em;
+    padding: 0.5em 2em 1.5em 2em;
+    background-color: var(--cor6);
+    text-align: center;
+  }
   </style>
 </head>
 <body>
 
 
-    <h6><mark>&emsp;<ins><a href="../../../central/js-modulos.html">voltar</a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
+  <header id="mensup">
+    <a href="../../../central/js-modulos.html">voltar</a>
+    <p>Exercício 03 do módulo C do curso de JavaScript</p>
+  </header>
 
 
-    <h1 style="color: whitesmoke; text-shadow: 0.01em 0.01em 0.05em whitesmoke;">Adaptção do exercício 09 pra site</h1>
 
 
   <main>
-    <p>&emsp;Escolha o seu país:</p>
-    <main id="paises" style="text-align: center;">
-      <input id="b1" type="button" value="Brasil">
-      <input id="b2" type="button" value="Estados Unidos">
-      <input id="b3" type="button" value="Japão">
-      <input id="b4" type="button" value="Russia">
-      <input id="b5" type="button" value="Espanha">
-      <input id="b6" type="button" value="Alemanha">
-      <input id="b7" type="button" value="Argentina">
-      <input id="b8" type="button" value="Jamaica">
-      <input id="b9" type="button" value="Países Baixos">
-      <input id="b10" type="button" value="Ucrânia">
-      <input id="b11" type="button" value="Chile">
-      <input id="b12" type="button" value="China">
-      <input id="sel" type="button" value="selecionar">
-    </main>
-    <main id="res"></main>
+    <h1 id="titu">Adaptação do exercício 9.1 pra site.</h1>
+  <article id="ex">
+  <div id="paises">
+    <input id="b1" type="button" value="Brasil">
+    <input id="b2" type="button" value="Estados Unidos">
+    <input id="b3" type="button" value="Japão">
+    <input id="b4" type="button" value="Russia">
+    <input id="b5" type="button" value="Espanha">
+    <input id="b6" type="button" value="Alemanha">
+    <input id="b7" type="button" value="Argentina">
+    <input id="b8" type="button" value="Jamaica">
+    <input id="b9" type="button" value="Países Baixos">
+    <input id="b10" type="button" value="Ucrânia">
+    <input id="b11" type="button" value="Chile">
+    <input id="b12" type="button" value="China">
+    <input id="sel" type="button" value="selecionar">
+  </div>
+    <p id="res"></p>
+  </article>
   </main>
+
+
 
 
     <script src="script/maqui-exjs-09.1.js"></script>

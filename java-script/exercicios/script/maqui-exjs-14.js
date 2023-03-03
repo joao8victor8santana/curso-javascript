@@ -3,17 +3,17 @@ h = agora.getHours()
 m = agora.getMinutes()
 
 
-cop = document.querySelector("h2#me")
-hora = document.querySelector("h2#h")
+cop = document.querySelector("p#me")
+hora = document.querySelector("p#h")
 imagem = document.querySelector("p#img")
-fundo = document.querySelector("body#b1")
-caixa = document.querySelector("section#caixa")
-atualizar = document.querySelector("h2#atu")
+fundo = document.querySelector("body")
+caixa = document.querySelector("article#ex")
+atualizar = document.querySelector("p#atu")
 
 
 if (h==0&&m<=15) { // meia noite
     cop.style.color = "whitesmoke"
-    atualizar.innerHTML = `<a style="color: #595959" href="../fazendo exercicios/pag-exjs-14.html">Clique para atualizar</a>`
+    atualizar.innerHTML = `<a style="color: #595959" href="../exercicios/pag-exjs-14.html">Clique para atualizar</a>`
     hora.style.color = "#C86932"
     caixa.style.background = "#212121"
     fundo.style.background = "#280f05"
@@ -23,7 +23,7 @@ if (h==0&&m<=15) { // meia noite
 
 } else if (h<5&&m<45) { // madrugada
     cop.style.color = "whitesmoke"
-    atualizar.innerHTML = `<a style="color: #595959" href="../fazendo exercicios/pag-exjs-14.html">Clique para atualizar</a>`
+    atualizar.innerHTML = `<a style="color: #595959" href="../exercicios/pag-exjs-14.html">Clique para atualizar</a>`
     hora.style.color = "#8C251C"
     caixa.style.background = "#050C0D"
     fundo.style.background = "#000101"
@@ -33,7 +33,7 @@ if (h==0&&m<=15) { // meia noite
 
 } else if (h<=6&&m<=15) { // nascer do sol
     cop.style.color = "black"
-    atualizar.innerHTML = `<a style="color: black" href="../fazendo exercicios/pag-exjs-14.html">Clique para atualizar</a>`
+    atualizar.innerHTML = `<a style="color: black" href="../exercicios/pag-exjs-14.html">Clique para atualizar</a>`
     hora.style.color = "#E9A393"
     caixa.style.background = "#f5f5f5"
     fundo.style.background = "#8c9c9f"
@@ -43,7 +43,7 @@ if (h==0&&m<=15) { // meia noite
 
 } else if (h<12&&m<45) { // manhã
     cop.style.color = "black"
-    atualizar.innerHTML = `<a style="color: black" href="../fazendo exercicios/pag-exjs-14.html">Clique para atualizar</a>`
+    atualizar.innerHTML = `<a style="color: black" href="../exercicios/pag-exjs-14.html">Clique para atualizar</a>`
     hora.style.color = "#CD9B12"
     caixa.style.background = "#f5f5f5"
     fundo.style.background = "#99B2D1"
@@ -53,7 +53,7 @@ if (h==0&&m<=15) { // meia noite
 
 } else if (h<=13&&m<=15) { // meio dia
     cop.style.color = "black"
-    atualizar.innerHTML = `<a style="color: black" href="../fazendo exercicios/pag-exjs-14.html">Clique para atualizar</a>`
+    atualizar.innerHTML = `<a style="color: black" href="../exercicios/pag-exjs-14.html">Clique para atualizar</a>`
     hora.style.color = "#4A81E6"
     caixa.style.background = "#f5f5f5"
     fundo.style.background = "#A5B7F1"
@@ -63,7 +63,7 @@ if (h==0&&m<=15) { // meia noite
 
 } else if (h<17&&m<45) { // tarde
     cop.style.color = "black"
-    atualizar.innerHTML = `<a style="color: black" href="../fazendo exercicios/pag-exjs-14.html">Clique para atualizar</a>`
+    atualizar.innerHTML = `<a style="color: black" href="../exercicios/pag-exjs-14.html">Clique para atualizar</a>`
     hora.style.color = "#697179"
     caixa.style.background = "#f5f5f5"
     fundo.style.background = "#737D6E"
@@ -73,7 +73,7 @@ if (h==0&&m<=15) { // meia noite
 
 } else if (h<=18&&m<=15) { // crepusculo
     cop.style.color = "black"
-    atualizar.innerHTML = `<a style="color: black" href="../fazendo exercicios/pag-exjs-14.html">Clique para atualizar</a>`
+    atualizar.innerHTML = `<a style="color: black" href="../exercicios/pag-exjs-14.html">Clique para atualizar</a>`
     hora.style.color = "#97BCD0"
     caixa.style.background = "#f5f5f5"
     fundo.style.background = "#A47640"
@@ -83,7 +83,7 @@ if (h==0&&m<=15) { // meia noite
 
 } else if (h<=23&&m<45) { // noite
     cop.style.color = "whitesmoke"
-    atualizar.innerHTML = `<a style="color: #595959" href="../fazendo exercicios/pag-exjs-14.html">Clique para atualizar</a>`
+    atualizar.innerHTML = `<a style="color: #595959" href="../exercicios/pag-exjs-14.html">Clique para atualizar</a>`
     hora.style.color = "#55088A"
     caixa.style.background = "#212121"
     fundo.style.background = "#261314"
@@ -93,7 +93,7 @@ if (h==0&&m<=15) { // meia noite
 
 } else if (h<24&&m<60) { // meia noite
     cop.style.color = "whitesmoke"
-    atualizar.innerHTML = `<a style="color: #595959" href="../fazendo exercicios/pag-exjs-14.html">Clique para atualizar</a>`
+    atualizar.innerHTML = `<a style="color: #595959" href="../exercicios/pag-exjs-14.html">Clique para atualizar</a>`
     hora.style.color = "#C86932"
     caixa.style.background = "#212121"
     fundo.style.background = "#280f05"
