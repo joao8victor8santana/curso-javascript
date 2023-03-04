@@ -1,11 +1,15 @@
 @charset "UTF-8";
 
 
+
+
+
 /* titu */
 h1#titu {
   margin: auto;
   width: 60%;
 }
+
 
 
 
@@ -22,6 +26,9 @@ main#ex > div { padding: 1vw; display: inline-block;  text-align: left; }
 div#p1 > p, div#p2 > p { font-size: 1.5vw; color: var(--cor7); }
 
 
+
+
+
 /* nascimento */
 main#ex > div#p1 { width: 22.5%; display: inline-block; }
 main#ex > div#inp1 { width: 62.5%; display: inline-block; text-align: center; }
@@ -31,6 +38,9 @@ div#inp1 > input {
   font-size: 1.5vw;
   width: 99.5%;
 }
+
+
+
 
 
 /* gênero */
@@ -58,6 +68,9 @@ input#oma, input#ofe, input#onb {
 }
 
 
+
+
+
 /* resultado */
 main#ex > div#inp3 { width: 95%; text-align: left; }
 div#inp3 > input#ver {
@@ -66,7 +79,6 @@ div#inp3 > input#ver {
   font-size: 1.5vw;
   padding: 0.25vw 2.5vw;
 }
-
 div#res > img { width: 80%; display: block; margin: auto; }
 div#res > p { margin-bottom: 2em; }
 main#ex > div#res {
