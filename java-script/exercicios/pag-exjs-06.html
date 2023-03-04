@@ -5,37 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
-    <title>Eventos DOM</title>
+    <title>Números com JS</title>
     <link rel="stylesheet" href="style/style-exjs.css">
-  <style>
-  div#area {
-    background-color: rgb(150, 150, 150);
-    border-radius: 0.4em;
-    line-height: 06em;
-    text-align: center;
-    height: 06.5em;
-    width: 07em;
-    color: rgb(0, 0, 0);
-    margin: auto;
-  }
-  </style>
+    <link rel="stylesheet" href="style/style-exjs-06.css">
 </head>
 <body>
 
 
   <header id="mensup">
     <a href="../../../central/js-modulos.html">voltar</a>
-    <p>Exercício 02 do módulo C do curso de JavaScript</p>
+    <p>Exercício 06 do curso de JavaScript</p>
   </header>
 
 
 
 
   <main>
-    <h1 id="titu">Interações com a Grande Caixa Maluca</h1>
+    <h1 id="titu">Somando Dois Números</h1>
   <article id="ex">
-    <div id="area">Interaja...</div>
-    <p>&emsp;Caso o seu código pare de funcionar clique com o botão direito na pagina, clique em inspecionar e veja qual erro que aparece na parte de console.</p>
+    <button onclick="somar()">Iniciar a soma</button>
+  <section id="res">
+    <p>O resultado vem aqui...</p>
+  </section>
   </article>
   </main>
 
@@ -43,29 +34,13 @@
 
 
   <script>
-  a = document.querySelector("div#area")
-  a.addEventListener("click", clicar)
-  a.addEventListener("mouseenter", entrar)
-  a.addEventListener("mouseout", sair)
+  function somar() {
+    num1 = Number(prompt("Digite um número:"))
+    num2 = Number(prompt("Digite outro número:"))
+    res = document.querySelector("section#res")
 
-  function clicar() {
-    a.innerText = "Clicou!"
-    a.style.background = "rgb(77, 61, 93)"
-    a.style.color = "whitesmoke"
+    res.innerHTML = `<p>A soma entre <strong>${num1}</strong> e <strong>${num2}</strong> é igual a <strong>${num1+num2}</strong>!</p>`
   }
-
-  function entrar() {
-    a.innerText = "Entrou!"
-    a.style.background = "rgb(48, 48, 48)"
-    a.style.color = "whitesmoke"
-  }
-
-  function sair() {
-    a.innerText = "Saiu!"
-    a.style.background = "rgb(48, 48, 48)"
-    a.style.color = "whitesmoke"
-  }
-
   </script>
 
 

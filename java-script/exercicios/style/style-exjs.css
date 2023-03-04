@@ -87,13 +87,30 @@ main {
   width: 80%;
   margin: 0em auto 2.5em auto;
 }
+main#exbl {
+  background-color: var(--cor1);
+  border-radius: 1vw;
+  padding: 1em;
+  margin: auto;
+  width: 77.5%;
+}
 h1#titu {
-  font-size: 3.5vw;
   margin-right: 1em;
   text-shadow: 0em 0em 0.25em var(--cor4);
   font-family: var(--fontetitu);
   text-align: right;
+  font-size: 3vw;
   padding: 0.5vw;
+  color: var(--cor6);
+}
+h1#titubl {
+  margin: auto;
+  text-shadow: 0em 0em 0.25em var(--cor4);
+  font-family: var(--fontetitu);
+  text-align: right;
+  font-size: 3vw;
+  padding: 0.5vw;
+  width: 75%;
   color: var(--cor6);
 }
 article#ex {
@@ -101,6 +118,7 @@ article#ex {
   border-radius: 0em 0em 1vw 1vw;
   padding: 1em;
 }
-article#ex * {
-  margin-top: 1.5em;
+article#ex *, main#exbl * {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }

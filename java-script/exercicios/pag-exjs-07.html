@@ -5,40 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
-    <title>Somando Números</title>
+    <title>Números com JS</title>
     <link rel="stylesheet" href="style/style-exjs.css">
-  <style>
-  article {
-    text-align: center;
-  }
-  input { 
-    margin: 0.5em;
-    font-size: 1em;
-    width: 4.5em;
-  }
-  </style>
+    <link rel="stylesheet" href="style/style-exjs-07.css">
 </head>
 <body>
 
 
   <header id="mensup">
     <a href="../../../central/js-modulos.html">voltar</a>
-    <p>Exercício 03 do módulo C do curso de JavaScript</p>
+    <p>Exercício 07 do curso de JavaScript</p>
   </header>
 
 
 
 
   <main>
-    <h1 id="titu">Somando Valores.</h1>
+    <h1 id="titu">Média do(a) Estudante v1.0</h1>
   <article id="ex">
-    <input type="number" name="txtn1" id="txtn1">
-    +
-    <input type="number" name="txtn2" id="txtn2">
-
-    <input type="button" value="somar" onclick="somar()">
-    
-    <p id="res"></p>
+    <button onclick="media()">Calcular média</button>
+  <section id="res">
+    <p>O resultado vai aparecer aqui...</p>
+  </section>
   </article>
   </main>
 
@@ -46,15 +34,19 @@
 
 
   <script>
-  function somar() {
-    tn1 = document.getElementById("txtn1")
-    tn2 = document.getElementById("txtn2")
-    res = document.getElementById("res")
-    n1 = parseInt(tn1.value)
-    n2 = parseInt(tn2.value)
-    s = n1 + n2
-    res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`}
+  function media() {
+    nome = prompt("Qual é o nome do(a) estudante?")
+    not1 = Number(prompt(`Qual foi a primeira nota tirada por:\n${nome}?`))
+    not2 = Number(prompt(`Além da nota ${not1}, qual foi a outra nota tirada por:\n${nome}`))
 
+
+    medi = (not1 + not2) / 2
+
+    res = document.querySelector("section#res")
+    res.innerHTML = `<p>Calculando a média final de <strong>${nome}</strong>.</p><hr>`
+    res.innerHTML += `<p>As notas obtidas foram: <strong>${not1}</strong> e <strong>${not2}</strong>.</p>`
+    res.innerHTML += `<p>A média final será <strong>${medi}</strong>!</p>`
+  }
   </script>
 
 

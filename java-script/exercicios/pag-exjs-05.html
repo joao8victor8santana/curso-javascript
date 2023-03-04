@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
-    <title>Primeiros passos com DOM</title>
+    <title>Números com JS</title>
     <link rel="stylesheet" href="style/style-exjs.css">
+    <link rel="stylesheet" href="style/style-exjs-05.css">
 </head>
 <body>
 
 
   <header id="mensup">
     <a href="../../../central/js-modulos.html">voltar</a>
-    <p>Exercício 01 do módulo C do curso de JavaScript</p>
+    <p>Exercício 05 do curso de JavaScript</p>
   </header>
 
 
 
 
   <main>
-    <h1 id="titu">Iniciando estudos DOM</h1>
+    <h1 id="titu">Trabalhando com Números</h1>
   <article id="ex">
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>clique em mim</div>
-    <p id="txq"></p>
+    <button onclick="calcular()">Clique para calcular</button>
+  <section id="res">
+    <p>O resultado vem aqui...</p>
+  </section>
   </article>
   </main>
 
@@ -33,11 +34,13 @@
 
 
   <script>
-    // n = prompt("Qual é o seu nome?")
-    p1 = document.getElementsByTagName("p")[2]
-    tx1 = document.querySelector("p#tx1")
-    tx1.innerHTML = `<p>p1.innerText: ${p1.innerHTML}</p>`
-    document.write(`p1.innerHTML: ${p1.innerHTML}`)
+  alert("Seja bem-vinda(o) ao meu site!")
+  
+  function calcular() {
+    num = prompt("Digite um número:")
+    res = document.querySelector("section#res")
+    res.innerHTML = `<p>O dobro de <strong>${num}</strong> é <strong>${num*2}</strong> e a metade é <strong>${num/2}</strong>!</p>`
+  }
   </script>
 
 

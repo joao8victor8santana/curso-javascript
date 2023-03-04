@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
-    <title>Mundo Novo</title>    
+    <title>Dados com JS</title>
     <link rel="stylesheet" href="style/style-exjs.css">
+    <link rel="stylesheet" href="style/style-exjs-04.css">
 </head>
 <body>
 
 
   <header id="mensup">
     <a href="../../../central/js-modulos.html">voltar</a>
-    <p>Exercício 03 do módulo B do curso de JavaScript</p>
+    <p>Exercício 04 do curso de JavaScript</p>
   </header>
 
 
 
 
   <main>
-    <h1 id="titu">Sem título</h1>
+    <h1 id="titu">Trabalhando com Dados v2.0</h1>
   <article id="ex">
-
+    <button onclick="inicio()">Clique para começar</button>
+  <section id="res">
+    <p>Aqui vai aparecer o resultado...</p>
+  </section>
   </article>
   </main>
 
@@ -30,15 +34,11 @@
 
 
   <script>
-
-    res = document.querySelector("article#ex")
-
+  function inicio() {
     nome = prompt("Qual é o seu nome?")
-    res.innerHTML = `<p>Olá, <strong>${nome}</strong>!</p>`
-    res.innerHTML += `<p>Seu nome possui ${nome.length} letras.</p>`
-    res.innerHTML += `<p>Seu nome em maiúsculas é assim: ${nome.toUpperCase()}</p>`
-    res.innerHTML += `<p>E em minúsculas fica assim: ${nome.toLowerCase()}</p>`
-
+    res = document.querySelector("section#res")
+    res.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer!</p>`
+  }
   </script>
 
 

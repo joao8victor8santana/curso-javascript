@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
-    <title>Meu primeiro programa</title>
+    <title>Dados com JS</title>
     <link rel="stylesheet" href="style/style-exjs.css">
+    <link rel="stylesheet" href="style/style-exjs-03.css">
   <style>
     /* Comentário em CSS */
   </style>
@@ -16,16 +17,16 @@
 
   <header id="mensup">
     <a href="../../../central/js-modulos.html">voltar</a>
-    <p>Exercício 02 do módulo B do curso de JavaScript</p>
+    <p>Exercício 03 do curso de JavaScript</p>
   </header>
 
 
 
 
   <main>
-    <h1 id="titu" style="color: whitesmoke; text-shadow: 0.01em 0.01em 0.05em whitesmoke;">Olá, Mundo!</h1>
+    <h1 id="titu">Trabalhando com Dados v1.0</h1>
   <article id="ex">
-    <p>Já me livrei da maldição!!!</p>
+    <button onclick="inicio()">Clique para começar</button>
   </article>
   </main>
 
@@ -33,11 +34,10 @@
 
 
   <script>
-    n1 = Number(prompt("digite um número."))
-    n2 = prompt("digite outro número.")
-    n2 = Number(n2)
-    soma = n1 + n2
-    alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+  function inicio() {
+    nome = prompt("Qual é o seu nome?")
+    alert(`Olá, ${nome}! É um prazer te conhecer!`)
+  }
   </script>
 
 
