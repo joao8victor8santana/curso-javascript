@@ -89,3 +89,16 @@ main#ex > div#res {
   margin: 1vw;
   width: 87.5%;
 }
+
+
+
+
+
+/* rodapé */
+footer > p {
+  text-decoration: wavy;
+  color: var(--cor7);
+  font-size: 2vw;
+  margin-top: 2vw;
+  text-align: center;
+}
