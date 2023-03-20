@@ -1,0 +1,182 @@
+@charset "UTF-8";@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+
+:root {
+  --cor0: #1e1e1ede;
+  --cor1: #000000;
+  --cor2: #2b2b1b;
+  --cor3: #1e1e1e;
+  --cor4: #5e5e2e;
+  --cor5: #4b4b4b;
+  --cor6: #d0d080;
+  --cor7: #f5f5f5;
+
+
+  --foto-ba: url("madrugada-wallpaper.jpg");
+  --foto-de: url("desafios.jpeg");
+
+
+  --fontetitu: 'Amatic SC', cursive;
+}
+* { padding: 0em; margin: 0em; } a { text-decoration: none; }
+body {
+  min-height: 100%;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cor3) var(--foto-ba) center center no-repeat fixed;
+} html { min-height: 100%; }
+
+
+
+
+
+
+/* corpo */
+main {
+  background-color: var(--cor0);
+  border-radius: 1vw;
+  box-shadow: inset 0vw 0vw 2.5vw var(--cor1);
+  transform: translate( -50% , 00% );
+  position: absolute;
+  padding: 0.5vw;
+  margin: auto;
+  width: 81.5vw;
+  left: 50%;
+  top: 05%;
+}
+h1#titu {
+  letter-spacing: 0.5vw;
+  border-bottom: 0.1vw solid var(--cor7);
+  padding-left: 1.5vw;
+  text-shadow: 0em 0em 0.25em var(--cor6);
+  font-family: var(--fontetitu);
+  text-align: left;
+  font-size: 3.5vw;
+  color: var(--cor6);
+} a#vol { margin-right: 0.75vw; text-align: center; }
+  a#vol > img { border-radius: 50%; width: 2.75vw; }
+  a#vol > img:hover { box-shadow: inset 0vw 0vw 01vw var(--cor7); }
+  article#ex { position: relative; height: 41vw; }
+
+nav#exloa { position: absolute; }
+nav#inex { position: absolute; transform: translate( -100% , -100% ); top: 97.5%; left: 98.75%;}
+
+
+
+div.ex {
+  background-color: var(--cor1);
+  border-radius: 0.25vw;
+  display: inline-block;
+  margin: 0.5vw;
+  width: 26.1vw;
+} h2, h2 > a {
+  transition-duration: 0.125s;
+  background-image: linear-gradient( 90deg, transparent, var("--cor1") );
+  letter-spacing: 0.5vw;
+  text-shadow: 0em 0em 0.25em var(--cor6);
+  font-family: var(--fontetitu);
+  text-align: left;
+  font-size: 1.5vw;
+  margin: 1vw;
+  color: var(--cor7);
+} h2 > a:hover { text-decoration: underline; text-shadow: 0vw 0vw 0.5vw var(--cor7); }
+  ul {
+  background-color: #000000aa;
+  border-radius: 0.25vw;
+  overflow-x: auto;
+  padding: 0.5vw;
+  height: 29.70vw;
+  border: 0.5vw solid #00000000;
+} li {
+  list-style-position: inside;
+  background-image: linear-gradient( 90deg , transparent , var(--cor3) );
+  border-radius: 0.5vw;
+  font-family: var(--fontetitu);
+  box-shadow: inset 0em 0em 1.5em var(--cor1);
+  text-align: left;
+  font-size: 2vw;
+  padding: 0.5vw;
+  margin: 1vw 0vw;
+}
+  sup { font-size: 1.05vw; }
+  li::before { margin: 0vw -0.75vw 0vw -2vw; content: "📁"; }
+  li > a { transition-duration: 0.125s; text-decoration: none; color: var(--cor6); }
+  li > a:hover {
+  text-shadow: 0em 0em 0.25em var(--cor7);
+  color: var(--cor7);
+}
+
+
+
+
+
+
+/* dentro dos ex */
+article#inex {
+  border-radius: 0.25vw;
+  background-color: var(--cor1);
+  margin: 0.5vw;
+  position: absolute;
+  height: 17.3vw;
+  display: inline-block;
+  width: 53.3vw;
+}
+
+
+
+article#de { display: inline-block; }
+  div#de {
+  background-attachment: fixed;
+  background-position: center center;
+  transition-duration: 0.5s;
+  background-image: url("desafios.jpeg");
+  background-size: 32vw;
+  border-radius: 0.25vw;
+  box-shadow: inset 0vw 0vw 2.5vw var(--cor2);
+  height: 9.45vw;
+  margin: 0.5vw;
+  width: 20vw;
+} div#de:hover { background-size: 22vw; }
+  div#de > a {  height: 100%; display: block; }
+  div#de > a > p {
+  font-family: var(--fontetitu);
+  text-shadow: 0vw 0vw 0.5vw;
+  font-size: 2.5vw;
+  padding: 0.5vw;
+  width: 35%;
+  color: var(--cor6);
+  left: 1vw;
+  top: 1vw;
+} p#scripton { display: none; }
+  div#de:hover > a > p#scripton { display: inline-block; }
+  div#de:hover > a > p#scriptoff { display: none; }
+
+
+
+article#pro { display: inline-block; }
+  div#pro {
+  background-attachment: fixed;
+  background-position: center center;
+  transition-duration: 1.5s;
+  background-image: url("fundo.jpeg");
+  background-size: 54vw;
+  border-radius: 0.25vw;
+  box-shadow: inset 0vw 0vw 2.5vw var(--cor2);
+  height: 6.4vw;
+  margin: 0.5vw;
+  width: 34vw;
+} div#pro:hover { background-position: center left; }
+  div#pro > a {  height: 100%; display: block; }
+  div#pro > a > p {
+  font-family: var(--fontetitu);
+  text-shadow: 0vw 0vw 0.5vw;
+  font-size: 2.5vw;
+  padding: 0.5vw;
+  height: 100%;
+  color: var(--cor6);
+  left: 1vw;
+  top: 1vw;
+} p#scripton { display: none; }
+  div#pro:hover > a > p#scripton { display: inline-block; }
+  div#pro:hover > a > p#scriptoff { display: none; }

@@ -1,0 +1,32 @@
+Col Máx: 140|| Col Máx Undlin: 138.
+____________________________________________________________________________________________________________||*Menu pra trocar de página*
+
+  <div id="mensub"><!-- Navegar pelas Páginas. -->
+  <div id="trocatroca">
+
+    <a href=""><mark>03</mark></a>
+    <a href=""><mark>02</mark></a>
+    <a href=""><mark>04</mark></a>
+    <a href=""><mark>05</mark></a>
+    <a href=""><mark>06</mark></a>
+    <a href=""><mark>07</mark></a>
+    <a href=""><mark>08</mark></a>
+    <a href=""><mark>09</mark></a>
+    <a href=""><mark>10</mark></a>
+  <br>
+    <a href="#"                                     ><mark>&nbsp;&lt;&lt;&lt;&nbsp;</mark></a><!-- <<< -->
+    <a href="#" rel="prev"                          ><mark>&nbsp;&lt;&lt;&nbsp;</mark></a><!-- << -->
+  <abbr title=" Você está visualizando a página 01 "><mark> Pág   01 </mark></abbr><!-- Onde você está. -->
+    <a href="pag-deh-02.html" rel="next"            ><mark>&nbsp;&gt;&gt;&nbsp;</mark></a><!-- >> -->
+    <a href="pag-deh-12.html"                       ><mark>&nbsp;&gt;&gt;&gt;&nbsp;</mark></a><!-- >>> -->
+
+  </div>
+  </div>
+
+______________________________________________________________________________________________________________________||*Titulo Decorado*
+
+    <h1>&emsp;&emsp;&emsp;<mark>&emsp;<ins>Desafio.&emsp;</ins></mark><ins>&emsp;</ins></h1><br><br>
+
+________________________________________________________________________________________________________________________||*Link Decorado*
+
+    <h6><mark>&emsp;<ins><a href="../../../central/pag-central.html" ><mark><ins>voltar</ins></mark></a>&emsp;</ins></mark><ins>&emsp;</ins></h6>
