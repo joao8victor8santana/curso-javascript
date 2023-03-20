@@ -6,30 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="conteudo/favicon.ico" type="image/x-icon">
     <title>Números com JS</title>
-    <link rel="stylesheet" href="style/style-exjs.css">
-    <link rel="stylesheet" href="style/style-exjs-05.css">
+    <link rel="stylesheet" href="style/pag-exjs.css">
+    <link rel="stylesheet" href="style/pag-exjs-05.css">
 </head>
 <body>
 
 
-  <header id="mensup">
-    <a href="../../../central/js-modulos.html">voltar</a>
-    <p>Exercício 05 do curso de JavaScript</p>
-  </header>
-
-
-
 
   <main>
+  <article id="titu">
+    <a id="vol" href="../javascript-modulos.html"> <img src="conteudo/voltar.png" alt="botão pra voltar"> </a>
     <h1 id="titu">Trabalhando com Números</h1>
+  </article>
   <article id="ex">
-    <button onclick="calcular()">Clique para calcular</button>
-  <section id="res">
-    <p>O resultado vem aqui...</p>
-  </section>
+
+        <button onclick="calcular()">Clique para calcular</button>
+
+
+
+      <section id="res">
+        <p>O resultado vem aqui...</p>
+      </section>
+
   </article>
   </main>
-
 
 
 
@@ -42,6 +42,7 @@
     res.innerHTML = `<p>O dobro de <strong>${num}</strong> é <strong>${num*2}</strong> e a metade é <strong>${num/2}</strong>!</p>`
   }
   </script>
+
 
 
 </body>

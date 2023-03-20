@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-h1#titu { font-size: 2.5vw;}
-article#ex * { margin: 0.5em 0em;}
-article#ex { padding: 0.5em; }
+
 main {
-  width: 40%;
+  max-width: 85%;
+  min-width: 32%;
+  width: 84vh;
 }
 img {
   width: 70%;
