@@ -109,9 +109,12 @@ div#d02 > input:hover, div#d02 > div#res:hover { box-shadow: inset 0em 0em 0.75e
 
 /* rodapé */
 footer > p {
+  background-color: var(--cor1);
   text-decoration: wavy;
-  color: var(--cor8);
-  margin: 2vw 0em;
+  border-radius: 0em 75% 0em 75%;
   text-align: center;
-  
+  padding: 0.35em;
+  margin: auto;
+  width: 10em;
+  color: var(--cor7);
 }
