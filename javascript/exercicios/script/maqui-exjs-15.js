@@ -1,92 +1,49 @@
+
 ver = document.querySelector("input#ver")
+ver = document.addEventListener( "mouseclick" , verificar )
 
-bo1 = document.querySelector("mark#bo1")
-bo2 = document.querySelector("mark#bo2")
-bo3 = document.querySelector("mark#bo3")
-
-oma = document.querySelector("input#oma")
-ofe = document.querySelector("input#ofe")
-onb = document.querySelector("input#onb")
-
-bt1 = document.querySelector("label#bt1")
-bt2 = document.querySelector("label#bt2")
-bt3 = document.querySelector("label#bt3")
-
-
-
-ver.addEventListener("mouseenter", entrara)
-ver.addEventListener("mouseout", saira)
-
-bo1.addEventListener("mouseenter", entrar1)
-bo1.addEventListener("mouseout", sair1)
-bo2.addEventListener("mouseenter", entrar2)
-bo2.addEventListener("mouseout", sair2)
-bo3.addEventListener("mouseenter", entrar3)
-bo3.addEventListener("mouseout", sair3)
-
-bt1.addEventListener("mouseenter", entrar1)
-bt1.addEventListener("mouseout", sair1)
-bt2.addEventListener("mouseenter", entrar2)
-bt2.addEventListener("mouseout", sair2)
-bt3.addEventListener("mouseenter", entrar3)
-bt3.addEventListener("mouseout", sair3)
-
-oma.addEventListener("mouseenter", entra1)
-oma.addEventListener("mouseout", sair1)
-ofe.addEventListener("mouseenter", entrar2)
-ofe.addEventListener("mouseout", sair2)
-onb.addEventListener("mouseenter", entrar3)
-onb.addEventListener("mouseout", sair3)
-
-
-
-function entrara() {ver.style.background = "#252525"}
-
-function entrar1() {bo1.style.background = "#252525"}
-function entrar2() {bo2.style.background = "#252525"}
-function entrar3() {bo3.style.background = "#252525"}
-
-
-function saira() {ver.style.background = "#a9a9a9"}
-
-function sair1() {bo1.style.background = "#a9a9a9"}
-function sair2() {bo2.style.background = "#a9a9a9"}
-function sair3() {bo3.style.background = "#a9a9a9"}
 
 
 
 function verificar() {
+
+  nas = document.querySelector("input#idade")
+  
+  oma = document.querySelector("input#oma")
+  ofe = document.querySelector("input#ofe")
+  onb = document.querySelector("input#onb")
+
   res = document.querySelector("div#res")
-  nas = document.querySelector("input#nas")
+
   data = new Date()
   ano = data.getFullYear()
-  ah = Number(ano)
+
+  aa = Number(ano)
   an = Number(nas.value)
-  idade = ah - an
+  idade = aa - an
+
   img = document.createElement("img")
 
 
 
+    if ( an==0 || an>aa ) {
+      alert("[ERRO] Verifique as informações.")
 
-  if ( an==0 || an>ah ) { 
-    alert("[ERRO] Verifique as informações.")
-
-    } else if ( oma.checked && idade<12 ) { // masculino criança
-      res.innerHTML = `<p>Você é um garoto de ${idade} anos!</p>`
-      img.setAttribute("src", "conteudo/h1 imagem .png")
-      } else if ( oma.checked && idade<18 ) { // masculino jovem
-        res.innerHTML = `<p>Você é um jovem de ${idade} anos!</p>`
-        img.setAttribute("src", "conteudo/h2 imagem .png")
-      } else if ( oma.checked && idade<50 ) { // masculino adulto
-        res.innerHTML = `<p>Você é um homem de ${idade} anos!</p>`
-        img.setAttribute("src", "conteudo/h3 imagem .png")
-      } else if ( oma.checked && idade<=120) { // masculino idoso
-        res.innerHTML = `<p>Você é um idoso de ${idade} anos!</p>`
-        img.setAttribute("src", "conteudo/h4 imagem .png")
-      } else if ( oma.checked && idade>120) { // mumia
-        res.innerHTML = `<p>Você tem ${idade} anos e com certeza é calvo.</p>`
-        img.setAttribute("src", "conteudo/mumi .png")
-
+      } else if ( oma.checked && idade<12 ) { // masculino criança
+        res.innerHTML = `<p>Você é um garoto de ${idade} anos!</p>`
+        img.setAttribute("src", "conteudo/h1 imagem .png")
+        } else if ( oma.checked && idade<18 ) { // masculino jovem
+          res.innerHTML = `<p>Você é um jovem de ${idade} anos!</p>`
+          img.setAttribute("src", "conteudo/h2 imagem .png")
+        } else if ( oma.checked && idade<50 ) { // masculino adulto
+          res.innerHTML = `<p>Você é um homem de ${idade} anos!</p>`
+          img.setAttribute("src", "conteudo/h3 imagem .png")
+        } else if ( oma.checked && idade<=120) { // masculino idoso
+          res.innerHTML = `<p>Você é um idoso de ${idade} anos!</p>`
+          img.setAttribute("src", "conteudo/h4 imagem .png")
+        } else if ( oma.checked && idade>120) { // mumia
+          res.innerHTML = `<p>Você tem ${idade} anos e com certeza é calvo.</p>`
+          img.setAttribute("src", "conteudo/mumi .png")
 
 
 
@@ -109,7 +66,6 @@ function verificar() {
 
 
 
-
     } else if ( onb.checked && idade<12 ) { // não-binário criança
       res.innerHTML = `<p>Você é uma criança de ${idade} anos!</p>`
       img.setAttribute("src", "conteudo/nb1 imagem .png")
@@ -126,5 +82,7 @@ function verificar() {
       } else if ( onb.checked && idade>120 ) { // mumia
         res.innerHTML = `<p>Você tem ${idade} e é provavel que tenha ajudado nas construções das pirâmides.</p>`
         img.setAttribute("src", "conteudo/mumi .png")}
-    res.appendChild(img)
-    }
+
+    if ( an!=0 && an<aa ) { res.appendChild(img) }
+
+}

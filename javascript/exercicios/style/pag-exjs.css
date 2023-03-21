@@ -9,8 +9,9 @@
   --cor3: #1e1e1e;
   --cor4: #5e5e2e;
   --cor5: #4b4b4b;
-  --cor6: #d0d080;
-  --cor7: #f5f5f5;
+  --cor6: #9b9b9b;
+  --cor7: #d0d080;
+  --cor8: #f5f5f5;
 
 
   --fontetitu: 'Amatic SC', cursive;
@@ -46,16 +47,15 @@ article#titu {
 }
 h1#titu {
   letter-spacing: 0.1em;
-  text-indent: 1.64em;
-  text-shadow: 0em 0em 0.1em var(--cor6);
+  text-shadow: 0em 0em 0.1em var(--cor7);
   font-family: var(--fontetitu);
   text-align: right;
   font-size: 2.5em;
-  padding: 0.2em 2.5vw 0.2em 2.5vw;
-  color: var(--cor6);
+  padding: 0.2em 2.5vw 0.2em 1.68em;
+  color: var(--cor7);
 } a#vol {
   position: absolute;
-  height: 4.15em;
+  height: 100%;
   width: 4.15em;
 } a#vol > img {
   position: absolute;
@@ -64,13 +64,13 @@ h1#titu {
   border-radius: 50%;
   transform: translate( -50% , -50% );
   width: 3em;
-} a#vol > img:hover { box-shadow: inset 0vw 0em 01em var(--cor7); }
+} a#vol > img:hover { box-shadow: inset 0vw 0em 01em var(--cor8); }
 
 
 
 /* exercícios */
 article#ex {
-  background-color: var(--cor7);
+  background-color: var(--cor8);
   border-radius: 0em 0em 1em 1em;
   padding: 1em;
 } article#ex * {

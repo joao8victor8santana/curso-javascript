@@ -20,39 +20,55 @@
     <h1 id="titu">Verificador de Idade</h1>
   </article>
   <article id="ex">
-
-
-
-
-
-  <div id="p1">
-    <p>Ano de Nascimento:</p>
-  </div>
-  <div id="inp1">
-      <input type="number" name="nas" id="nas">
-  </div>
-
-
-  <div id="p2">
-    <p>Sexo:</p>
-  </div>
-  <div id="inp2">
-    <label id="bt1" for="oma"><input type="radio" name="radsex" id="oma" checked >&emsp;masculino</label>
-    <label id="bt2" for="ofe"><input type="radio" name="radsex" id="ofe">&emsp;feminino</label>
-    <label id="bt3" for="onb"><input type="radio" name="radsex" id="onb">&emsp;não-binário</label> 
-  </div>
-
-    <hr>
   
-  <div id="inp3">
-    <input id="ver" type="button" value=" verificar " onclick="verificar()">
-  </div>
-  <div id="res">
-    Preencha os dados acima para ver o resultado!
-    <p id="img"></p>
-  </div>
+      <section id="conf">
+
+
+          <div id="nascimento">
+            <div id="d01">
+              <p id="nasc">Ano de Nascimento:</p>
+            </div>
+            <div id="d02">
+              <input type="number" name="nascimento" id="idade">
+            </div>
+          </div>
+
+          <div id="genero">
+            <div id="d01">
+              <p id="nasc">Sexo:</p>
+            </div>
+            <div id="d02">
+              <label id="bt1" for="oma"><input type="radio" name="radsex" id="oma" checked >&ensp;masculino</label>
+              <label id="bt2" for="ofe"><input type="radio" name="radsex" id="ofe">&ensp;feminino</label>
+              <label id="bt3" for="onb"><input type="radio" name="radsex" id="onb">&ensp;não-binário</label> 
+            </div>
+          </div>
+  
+
+      </section>
+
+      <section id="res">
+
+
+          <div id="d01">
+            <input id="ver" type="button" value=" verificar " onclick="verificar()">
+          </div>
+
+          <div id="d02">
+
+            <div id="res">
+              <p>Preencha os dados acima para ver o resultado!</p>
+            </div>
+
+          </div>
+
+
+      </section>
+
   </article>
   </main>
+
+
 
 
 
@@ -64,7 +80,10 @@
 
 
 
-    <script src="script/maqui-exjs-15.js"></script>
+
+
+  <script src="script/maqui-exjs-15.js"></script>
+
 
 
 </body>
