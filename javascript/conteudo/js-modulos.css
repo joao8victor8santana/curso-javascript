@@ -59,7 +59,7 @@ h1#titu {
   a#vol > img:hover { box-shadow: inset 0vw 0vw 01vw var(--cor7); }
   article#ex { position: relative; height: 41vw; }
 
-nav#exloa { position: absolute; }
+nav#ex01 { position: absolute; }
 nav#inex { position: absolute; transform: translate( -100% , -100% ); top: 97.5%; left: 98.75%;}
 
 
